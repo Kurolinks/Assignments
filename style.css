@@ -1,0 +1,180 @@
+/*Three columns styling*/
+/* - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */ *
+
+.body {
+    border: 0px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+.all {
+    display: flex;
+    height: 400px;
+}
+
+h1 {
+    font-weight: 700px;
+}
+
+img {
+    margin-top: 10px;
+}
+
+p {
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+.left {
+    background: #E28525;
+}
+
+.left img, h1, p, button{
+    margin-left: 30px;
+}
+
+
+.leftButton{
+    border: #E28525;
+    color: #E28525;
+    cursor: pointer;
+}
+
+.center {
+    background: #127178;
+}
+
+.center img, h1, p, button{
+    margin-left: 30px;
+}
+
+.centerButton {
+    border: #127178;
+    color: #127178;
+    cursor: pointer;
+}
+
+.right {
+    background: #00403F;
+}
+
+.right img, h1, p, button{
+    margin-left: 30px;
+}
+
+.rightButton {
+    border: #00403F;
+    color: #00403F;
+    cursor: pointer;
+}
+
+button {
+    background: white;
+    border-radius: 150px;
+    font-weight: 400px;
+    height: 20px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:375px) {
+    body{
+        background: white;
+    }
+
+    .all {
+        flex-direction: column;
+        text-align: left;
+    }
+    .left, .center, .right {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:376px) {
+    body{
+        
+    }
+
+    .all {
+        
+    }
+}
+
+/*grid stying*/
+
+
+.gbody {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.boxes {
+    background-color: hsl(248, 32%, 49%);
+    display: grid;
+    grid-template-areas:
+    'a a a a a a b b b'
+    'a a a a a a b b b'
+    'c c c c d d d d d'
+    'c c c c e e e e e' ;
+    column-gap: 10px;
+    height: 80vh;
+    margin: 25px auto;
+    padding: 15px 145px 30px 43px;
+    row-gap: 10px;
+    width: 60%;
+}
+
+.grid-container {
+    grid-template-areas: 'header header header header header header menu menu menu'
+                        'header header header header header header menu menu menu'
+                        'main main main main right right right right right'
+                        'main main main main footer footer footer footer footer';
+}
+
+.boxes div{
+    display: grid;
+    padding: 50px;
+}
+
+.orange {
+    align-content: center;
+    background: hsl(0, 100%, 74%);
+    grid-area: a;
+    justify-content: center;
+}
+
+.yellow{
+    align-content: center;
+    background: #FFA401;
+    grid-area: b;
+    justify-content: center;
+}
+
+.green{
+    align-content: center;
+    background: hsl(154, 59%, 51%);
+    grid-area: c;
+    justify-content: center;
+}
+
+.firstBlue{
+    align-content: center;
+    background: #01AEFD;
+    grid-area: d;
+    justify-content: center;
+}
+
+.secondBlue{
+    align-content: center;
+    background: #01AEFD;
+    grid-area: e;
+    justify-content: center;
+}
+
+/* - Desktop: 1440px */
