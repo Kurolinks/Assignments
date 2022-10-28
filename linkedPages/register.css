@@ -1,0 +1,101 @@
+body {
+    background: purple;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+form {
+    background: white;
+    border: 2px solid blue;
+    border-radius: 25px;
+    color: blue;
+    font-size: 18px;
+    height: 560px;
+    margin-left: 500px;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+div {
+    padding-top: 15px;
+}
+
+label {
+    
+}
+
+input {
+    border-radius: 10px;
+    /* margin-left: 15px; */
+    margin-top: 0px;
+    height: 30px;
+    width: 210px;
+}
+
+.first {
+    margin-left: -110px;
+}
+
+.last{
+    margin-left: -120px;
+}
+
+.phone {
+    margin-left: -90px;
+}
+
+.email { 
+    margin-left: -155px;
+}
+
+.gender {
+    margin-left: -55px;
+}
+
+.dob {
+    margin-left: ;
+}
+
+.date {
+    margin-left: 5px;
+    width: 90px;
+}
+
+select {
+    margin-left: 20px;
+    width: 70px;
+}
+
+.color {
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+}
+
+button {
+    background: black;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    margin-top: 20px;
+    /* margin-left: 15px; */
+    width: 200px;
+}
+
+a{
+    color: blue;
+}
+
+@media (max-width:600px){
+    form {
+        margin-left: 60px;
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <form action="">
+        <h1>Register</h1>
+        <div>
+            <label  class="first" for="text">First Name</label><br>
+            <input type="text" required> <br>
+        </div>
+        <div>
+            <label class="last" for="text">Last Name</label><br>
+            <input type="text" required> <br>
+        </div>
+        <div>
+            <label class="phone" for="Phone">Phone Number</label><br>
+            <input type="tel" minlength="11" maxlength="11" pattern="[0-9]+" required> <br>
+        </div>
+        <div>
+            <label class="email" for="Email">Email</label><br>
+            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> <br>
+        </div>
+        <div>
+            <label class="gender" for="gender">Gender</label>
+            <select name="Gender" id="gender" required>
+                <option value="invalid"></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select> <br>
+        </div>
+        <div>
+            <label class="dob" for="date of birth">Date of Birth</label>
+            <input class="date" type="date" required> <br>
+        </div>
+        <div>
+            <label for=""> Select your favorite color </label>
+            <input class="color" type="color"><br>
+            <button formaction="success.html">Register</button>
+        </div>
+        <a href="login.html">Log In</a>
+    </form>
+</body>
+</html>
